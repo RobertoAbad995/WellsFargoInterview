@@ -11,6 +11,10 @@
 		0265C04B289C701B004446F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265C04A289C701B004446F2 /* ContentView.swift */; };
 		0265C04D289C701E004446F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0265C04C289C701E004446F2 /* Assets.xcassets */; };
 		0265C050289C701E004446F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0265C04F289C701E004446F2 /* Preview Assets.xcassets */; };
+		0265C05B289C70DE004446F2 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265C05A289C70DE004446F2 /* WeatherInfo.swift */; };
+		0265C05D289C7200004446F2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265C05C289C7200004446F2 /* NetworkManager.swift */; };
+		0265C05F289C7295004446F2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265C05E289C7295004446F2 /* NetworkError.swift */; };
+		0265C061289C740F004446F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0265C060289C740F004446F2 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		0265C04A289C701B004446F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0265C04C289C701E004446F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0265C04F289C701E004446F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0265C05A289C70DE004446F2 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		0265C05C289C7200004446F2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0265C05E289C7295004446F2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		0265C060289C740F004446F2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		0265C047289C701B004446F2 /* WellsFargoInterview */ = {
 			isa = PBXGroup;
 			children = (
+				0265C059289C70B2004446F2 /* View */,
+				0265C057289C70A9004446F2 /* ViewModel */,
+				0265C056289C70A6004446F2 /* Model */,
+				0265C058289C70AE004446F2 /* Service */,
 				0265C048289C701B004446F2 /* WellsFargoInterviewApp.swift */,
-				0265C04A289C701B004446F2 /* ContentView.swift */,
 				0265C04C289C701E004446F2 /* Assets.xcassets */,
 				0265C04E289C701E004446F2 /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				0265C04F289C701E004446F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0265C056289C70A6004446F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0265C05A289C70DE004446F2 /* WeatherInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0265C057289C70A9004446F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0265C060289C740F004446F2 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0265C058289C70AE004446F2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0265C05C289C7200004446F2 /* NetworkManager.swift */,
+				0265C05E289C7295004446F2 /* NetworkError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0265C059289C70B2004446F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0265C04A289C701B004446F2 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0265C05D289C7200004446F2 /* NetworkManager.swift in Sources */,
 				0265C04B289C701B004446F2 /* ContentView.swift in Sources */,
 				0265C049289C701B004446F2 /* WellsFargoInterviewApp.swift in Sources */,
+				0265C05B289C70DE004446F2 /* WeatherInfo.swift in Sources */,
+				0265C061289C740F004446F2 /* ViewModel.swift in Sources */,
+				0265C05F289C7295004446F2 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
